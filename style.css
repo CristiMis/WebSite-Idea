@@ -1,0 +1,150 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/background.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99%;
+    background-color: rgba(18, 18, 18, 0.85); /* Background color with 85% transparency */
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #525252;
+}
+
+/* Header */
+#header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-box {
+    width: 90%;
+    color: #0259c6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    font-family: inherit;
+}
+
+.text-box p {
+    margin: 20px 0 40px;
+    font-size: 20px;
+    color: #0259c6;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid #525252;
+    border-radius: 20px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    background-color: #525252;
+    font-family: inherit;
+}
+
+.hero-btn:hover {
+    border: 1px solid #424242;
+    background: #363636;
+}
+
+/*recent pics*/
+
+.mySlides img {
+    width: 85%; /* Set the width to occupy 85% of the container */
+    border-radius: 10px; /* Optional: Add border radius for a rounded border */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: auto; /* Center the image horizontally */
+    top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+  
+  /* Ensure the slideshow container is properly sized */
+  .slideshow-container {
+    max-width: 1000px; /* Set a maximum width for the slideshow container */
+    margin: auto; /* Center the container horizontally */
+  }
+
+  #rphotos {
+    position: relative; /* Ensure the positioning context for absolute positioning */
+    background-color: rgba(0, 0, 0, 0.5); /* 85% transparent black background */
+    width: 100%; /* Occupy 85% of the container */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 50px 0; /* Add padding for spacing */
+  }
+  
+  #rphotos h2 {
+    color: #e5ff00; /* Set the text color to white */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Set the font family */
+    font-size: 24px; /* Set the font size */
+    position: absolute; /* Position the text absolutely */
+    top: 20px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+
+/*scroll animation*/
+html {
+    scroll-behavior: smooth;
+  }
+
