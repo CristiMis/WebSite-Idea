@@ -1,4 +1,11 @@
-/* Resetting default margin and padding */
+  /*scroll animation*/
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/*basic*/
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +75,7 @@ body {
 
 .text-box {
     width: 90%;
-    color: #0259c6;
+    color: #ffffff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,7 +91,7 @@ body {
 .text-box p {
     margin: 20px 0 40px;
     font-size: 20px;
-    color: #0259c6;
+    color: #ffffff;
 }
 
 .hero-btn {
@@ -111,40 +118,87 @@ body {
 /*recent pics*/
 
 .mySlides img {
-    width: 85%; /* Set the width to occupy 85% of the container */
-    border-radius: 10px; /* Optional: Add border radius for a rounded border */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin: auto; /* Center the image horizontally */
+    width: 85%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
     top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
   
-  /* Ensure the slideshow container is properly sized */
   .slideshow-container {
-    max-width: 1000px; /* Set a maximum width for the slideshow container */
-    margin: auto; /* Center the container horizontally */
+    max-width: 1000px;
+    margin: auto; 
   }
 
   #rphotos {
-    position: relative; /* Ensure the positioning context for absolute positioning */
-    background-color: rgba(0, 0, 0, 0.5); /* 85% transparent black background */
-    width: 100%; /* Occupy 85% of the container */
-    margin: 0 auto; /* Center the section horizontally */
-    padding: 50px 0; /* Add padding for spacing */
+    position: relative; 
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; 
+    margin: 0 auto;
+    padding: 50px 0;
   }
   
   #rphotos h2 {
-    color: #e5ff00; /* Set the text color to white */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Set the font family */
-    font-size: 24px; /* Set the font size */
-    position: absolute; /* Position the text absolutely */
-    top: 20px; /* Distance from the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    color: #e5ff00;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
   }
 
-/*scroll animation*/
-html {
-    scroll-behavior: smooth;
-  }
 
+/*portofolio*/
+
+  #portfolio {
+    padding: 50px 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+  }
+  
+  #portfolio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #portfolio h2 {
+    color: #e5ff00; 
+    font-size: 25px; 
+    margin-bottom: 10px;
+  }
+  
+  #portfolio p {
+    color: #ffffff; 
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid #525252;
+    border-radius: 20px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    background-color: #525252;
+    font-family: inherit;
+  }
+  
+  .portfolio-btn:hover {
+    border: 1px solid #424242;
+    background: #363636;
+  }
+  
+
+
+  
+  
+  
