@@ -41,26 +41,30 @@ body {
 }
 
 .nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .nav-links li {
-    display: inline;
+  display: inline;
+}
+
+.nav-links li:last-child {
+  float: right;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #525252;
+  color: #525252;
 }
 
 /* Header */
@@ -197,6 +201,77 @@ body {
     background: #363636;
   }
   
+/* Book a photoshoot */
+#book-photoshoot {
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative; /* Add position relative */
+}
+
+#book-photoshoot .container {
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+#book-photoshoot h2 {
+  color: #e5ff00;
+  font-size: 25px;
+  margin-bottom: 20px; 
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 2; 
+}
+
+#book-photoshoot p {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; 
+}
+
+#book-photoshoot form {
+  margin-top: 20px;
+}
+
+#book-photoshoot form input[type="text"],
+#book-photoshoot form input[type="email"],
+#book-photoshoot form textarea,
+#book-photoshoot form input[type="date"], 
+#book-photoshoot form button.book-btn {
+  width: 100%;
+  padding: 12px 20px; 
+  margin-bottom: 20px; 
+  border: 2px solid #fff;
+  border-radius: 20px; 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+
+#book-photoshoot form textarea {
+  height: 150px; 
+}
+
+#book-photoshoot form button.book-btn {
+  background-color: #525252;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#book-photoshoot form button.book-btn:hover {
+  background-color: #363636;
+}
+
+
+
+
+
+
 
 
   

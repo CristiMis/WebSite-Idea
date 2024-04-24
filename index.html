@@ -14,7 +14,9 @@
         <li><a href="index.html#home">Home</a></li>
         <li><a href="#rphotos">Recent Photoshoots</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#book-photoshoot">Book a photoshoot</a></li>
         <li><a href="#contact">Contact</a></li>
+  
       </ul>
     </div>
   </nav>
@@ -65,6 +67,21 @@
     </div>
   </section>
 
+<section id="book-photoshoot">
+  <div class="container">
+    <h2>Book a Photoshoot</h2>
+    <p>Ready to capture memorable moments? Contact me to schedule a photoshoot!</p>
+    <form action="book-photoshoot.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="date" name="date" required> <!-- Calendar input -->
+      <button type="submit" class="book-btn">Book Now</button>
+    </form>
+  </div>
+</section>
+
+  
   <section id="contact">
     <!-- Contact content -->
   </section>
